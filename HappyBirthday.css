@@ -1,0 +1,5 @@
+html,body {
+	background-image:url("happy.png");
+	background-attachment:fixed;
+	background-size:100% 100%;
+}

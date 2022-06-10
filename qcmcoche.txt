@@ -1,0 +1,42 @@
+<HTML>
+
+<HEAD>
+ <META HTTP-EQUIV="Content-Language" content="fr">
+ <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+ <TITLE>QCM avec cases Ã  cocher</TITLE>
+ <SCRIPT LANGUAGE="JavaScript">
+ <!-- cacher code
+ function test(nom,n) {
+  var rep=true;
+  for (i=0; i<n; i++) { 
+   if (nom[i].value==1 && nom[i].checked==false) rep=false;
+   if (nom[i].value==0 && nom[i].checked==true) rep=false;
+  }
+  return rep;
+ }
+ //fin du script. -->
+ </SCRIPT>
+ 
+</HEAD>
+<center><font size="6"
+<BODY>
+<H1>QCM avec cases a cocher</H1>
+<HR>
+<FORM NAME="qcm1">
+<B>Question :</B><BR>
+<b>Quel jour sommes nous ?</b><BR>
+<B>Reponses :</B>
+<BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>03/06/2022</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=1>11/06/2022</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>15/06/2022</INPUT>
+<BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>05/06/2022</INPUT>
+<BR><BR>
+<INPUT TYPE=BUTTON NAME="bouton" VALUE="Verifier"
+ ONCLICK="if (test(choix,4)) {alert('BON ANNIVERSAIRE !!!!.')} 
+          else {alert('Reponse fausse.')}">
+</INPUT>
+</FORM>
+<HR>
+<A HREF="qcmcoche.txt" TARGET="_blank">Voir le fichier source</A>
+</BODY>
+</HTML>
